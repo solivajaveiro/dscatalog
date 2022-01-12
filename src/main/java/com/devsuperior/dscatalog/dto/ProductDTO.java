@@ -19,7 +19,7 @@ public class ProductDTO implements Serializable {
     private String imgUrl;
     private Instant date;
 
-    private List<CategoryDTO> cagories = new ArrayList<>();
+    private List<CategoryDTO> categories = new ArrayList<>();
 
     public ProductDTO() {
 
@@ -45,7 +45,7 @@ public class ProductDTO implements Serializable {
 
     public ProductDTO(Product entity, Set<Category> categories) {
         this(entity);
-        categories.forEach(cat -> this.cagories.add(new CategoryDTO(cat)));
+        categories.forEach(cat -> this.categories.add(new CategoryDTO(cat)));
     }
 
     public Long getId() {
@@ -96,11 +96,11 @@ public class ProductDTO implements Serializable {
         this.date = date;
     }
 
-    public List<CategoryDTO> getCagories() {
-        return cagories;
+    public List<CategoryDTO> getCategories() {
+        return categories;
     }
 
-    public void setCagories(List<CategoryDTO> cagories) {
-        this.cagories = cagories;
+    public void setCategories(List<CategoryDTO> categories) {
+        this.categories = categories;
     }
 }
