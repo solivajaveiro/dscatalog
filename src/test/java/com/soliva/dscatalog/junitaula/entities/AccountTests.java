@@ -2,7 +2,7 @@ package com.soliva.dscatalog.junitaula.entities;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
+//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
 public class AccountTests {
 
     @Test
